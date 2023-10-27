@@ -16,7 +16,7 @@ namespace ServiceLocator.UI
 
             foreach (MonkeyCellScriptableObject monkeySO in monkeyCellScriptableObjects)
             {
-                MonkeyCellController monkeyCell = new MonkeyCellController(playerService, cellContainer, monkeyCellPrefab, monkeySO);
+                MonkeyCellController monkeyCell = new MonkeyCellController(PlayerService.Instance, cellContainer, monkeyCellPrefab, monkeySO);
                 monkeyCellControllers.Add(monkeyCell);
             }
         }
