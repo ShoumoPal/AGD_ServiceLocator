@@ -31,6 +31,6 @@ namespace ServiceLocator.Player.Projectile
             return projectile;
         }
 
-        protected override ProjectileController CreateItem() => new ProjectileController(PlayerService.Instance, projectilePrefab, projectileContainer);
+        protected override ProjectileController CreateItem() => new ProjectileController(GameService.Instance.playerService, projectilePrefab, projectileContainer);
     }
 }

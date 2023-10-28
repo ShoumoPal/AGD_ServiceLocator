@@ -34,6 +34,6 @@ namespace ServiceLocator.Wave.Bloon
             return bloon;
         }
 
-        protected override BloonController CreateItem() => new BloonController(PlayerService.Instance, WaveService.Instance, SoundService.Instance, bloonPrefab, bloonContainer);
+        protected override BloonController CreateItem() => new BloonController(GameService.Instance.playerService, WaveService.Instance, SoundService.Instance, bloonPrefab, bloonContainer);
     }
 }
