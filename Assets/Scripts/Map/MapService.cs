@@ -6,10 +6,10 @@ using ServiceLocator.Events;
 
 namespace ServiceLocator.Map
 {
-    public class MapService : GenericMonoSingleton<MapService>
+    public class MapService : MonoBehaviour
     {
-        [SerializeField] private EventService eventService;
         [SerializeField] private MapScriptableObject mapScriptableObject;
+        [SerializeField] private EventService eventService;
 
         private Grid currentGrid;
         private Tilemap currentTileMap;
